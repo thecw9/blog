@@ -1,11 +1,14 @@
-import { DevIconTypes } from "@/components/dev-icons"
+export interface ImageProps {
+  src: string
+  alt: string
+}
 
 export interface ProjectData {
   title: string
   description: string
   titleLink: string
   links: { title: string; href: string }[]
-  icons?: DevIconTypes[]
+  images?: ImageProps[]
 }
 
 const projectsData: ProjectData[] = [
@@ -21,12 +24,7 @@ const projectsData: ProjectData[] = [
     description:
       "国网湖南超高压变电公司大型充油线圈设备运行工况异常预警技术研究及应用外协加工与测试技术服务",
     titleLink: "https://f1-gpt.vercel.app",
-    links: [
-      {
-        title: "GitHub",
-        href: "https://github.com/thecw9/power_prophet",
-      },
-    ],
+    links: [],
   },
   {
     title: "基于多源数据融合的超特高压换流阀工况识别研究",
@@ -44,37 +42,10 @@ const projectsData: ProjectData[] = [
     ],
   },
   {
-    title: "换流阀状态监测与智能评估系统实践教程",
-    description: "教材",
-    titleLink: "https://jolbol1.github.io/f1-calc/",
-    links: [
-      {
-        title: "Demo",
-        href: "https://jolbol1.github.io/f1-calc/",
-      },
-    ],
-  },
-  {
     title: "大数据驱动的双馈风电机组智能异常检测方法研究",
     description: "湖南省自然科学基金项目",
     titleLink: "https://www.npmjs.com/package/cz-gitmojis",
-    links: [
-      { title: "GitHub", href: "https://github.com/jolbol1/cz-gitmojis" },
-      { title: "NPM", href: "https://www.npmjs.com/package/cz-gitmojis" },
-    ],
-  },
-  {
-    title: "电力系统紫外信号采集与状态监测装置",
-    description: "实用新型专利",
-    titleLink: "https://github.com/jolbol1/bedTime",
-    links: [{ title: "GitHub", href: "https://github.com/jolbol1/bedTime" }],
-  },
-  {
-    title: "火电机组负荷偏差智能监测与评估系统",
-    description: "软件著作权",
-    titleLink: "https://github.com/jolbol1/jshopland",
-    links: [{ title: "GitHub", href: "https://github.com/jolbol1/jshopland" }],
-    icons: ["next", "react", "typescript"],
+    links: [],
   },
 ]
 

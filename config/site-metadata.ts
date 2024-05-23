@@ -3,9 +3,9 @@
 import { SiteConfig } from "config/config"
 
 const siteMetadata: SiteConfig = {
-  title: "Thecw's Blog",
+  title: "Thecw's Personal Website",
   author: "Jiawen Zuo",
-  headerTitle: "Thecw's Notes",
+  headerTitle: "Thecw's Personal Website",
   description:
     "Discover my personal website, where I showcase my coding skills and expertise in software engineering. Explore a range of innovative software tools, blog posts, and project showcases that demonstrate my passion for problem-solving and creativity in the rapidly changing field of technology.",
   language: "en-us",

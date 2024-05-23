@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import clsx from "clsx"
 import { useTheme } from "next-themes"
 
-import { GlowDiv } from "./glow-div"
+import { GlowDiv } from "@/components/glow-div"
 
 const LightIcon = () => (
   <span

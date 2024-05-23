@@ -1,8 +1,8 @@
 import Link from "next/link"
 
-import projectsData from "@/data/projectsData"
+import projectsData from "@/data/resume/projectsData"
 
-import ProjectCard from "./project-card"
+import ProjectCard from "@/components/project-card"
 
 export function ShowcaseProjects() {
   return (

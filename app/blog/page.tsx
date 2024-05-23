@@ -92,16 +92,15 @@ export default async function BlogPage() {
                                 className="text-primary-700 hover:text-primary-600 dark:text-primary-500 dark:hover:text-primary-400"
                                 aria-label={`Read "${title}"`}
                               >
-                                {`Read ${
-                                  post.readingTime.text
-                                    ? "(" +
-                                      post.readingTime.text.replace(
-                                        " read",
-                                        ""
-                                      ) +
-                                      ")"
-                                    : "more"
-                                }`}
+                                {`Read ${post.readingTime.text
+                                  ? "(" +
+                                  post.readingTime.text.replace(
+                                    " read",
+                                    ""
+                                  ) +
+                                  ")"
+                                  : "more"
+                                  }`}
                                 &rarr;
                               </Link>
                             </div>

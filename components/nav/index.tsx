@@ -5,11 +5,11 @@ import Logo from "@/public/images/general/logo.webp"
 import headerNavLinks from "@/config/nav-links"
 import siteMetadata from "@/config/site-metadata"
 
-import DarkModeSwitch from "./dark-mode-button"
-import { GlowDiv } from "./glow-div"
-import Link from "./link"
-import MobileNav from "./mobile-nav"
-import KBarSearchProvider from "./search"
+import DarkModeSwitch from "@/components/dark-mode-button"
+import { GlowDiv } from "@/components/glow-div"
+import Link from "@/components/link"
+import MobileNav from "@/components/mobile-nav"
+import KBarSearchProvider from "@/components/search"
 
 const Nav = () => {
   return (

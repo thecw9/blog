@@ -75,16 +75,19 @@ export default function About() {
         <div className="max-w-none pb-8 pt-8 text-gray-700 dark:text-gray-300 xl:col-span-2">
           <Mdx code={author.body.code} />
 
+          {/* 个人经历 */}
           <div className="relative col-span-2 col-start-2 ">
             <h3 className="my-12 text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100  sm:text-4xl sm:leading-10 md:my-6 md:text-left  md:leading-14">
-              My Coding Journey
+              个人经历
             </h3>
             <CodingTimeline />
           </div>
         </div>
+
+        {/* 专业证书 */}
         <div className="col-span-full items-start space-y-2 pt-3 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <h3 className="col-span-2 col-start-2 mb-6 text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-left md:leading-14">
-            Professional Certificates
+            专业证书
           </h3>
           <ProjectCard
             title={"AZ-204: Developing Solutions for Microsoft Azure"}
@@ -98,7 +101,6 @@ export default function About() {
             titleLink={
               "https://learn.microsoft.com/en-us/certifications/exams/az-204/"
             }
-            icons={["azure"]}
             className=" md relative col-span-2 col-start-2 w-full grow xl:w-1/2 "
           />
         </div>
