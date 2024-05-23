@@ -29,7 +29,6 @@ export function ShowcaseProjects() {
                   description={d.description}
                   titleLink={d.titleLink}
                   links={d.links}
-                  icons={d.icons}
                   className="md relative grow p-4 md:w-1/2 md:grow-0"
                 />
               ))}
