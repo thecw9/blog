@@ -2,9 +2,9 @@ import siteMetadata from "./site-metadata"
 
 const headerNavLinks = [
   { href: "/blog", title: "Blog" },
-  { href: "/projects", title: "Projects" },
+  { href: "/resume", title: "Resume" },
   { href: "/about", title: "About" },
-  { href: siteMetadata.github, title: "GitHub" },
+  // { href: siteMetadata.github, title: "GitHub" },
 ]
 
 export default headerNavLinks

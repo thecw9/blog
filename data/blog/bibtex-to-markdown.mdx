@@ -1,0 +1,41 @@
+---
+title: "如何将 BibTeX 转换为 Markdown 格式"
+date: "2024-05-23"
+tags: ["文献"]
+summary: "在学术写作和研究中，BibTeX 是一种广泛使用的文献管理工具。它与 LaTeX 搭配使用，帮助研究者组织和格式化参考文献。然而，随着 Markdown 在撰写文档、博客和笔记中的流行，很多人希望将 BibTeX 格式的参考文献转换为 Markdown 格式。在这篇博客中，我将介绍几种将 BibTeX 转换为 Markdown 的方法。"
+---
+
+## 使用python脚本
+
+```python
+import bibtexparser
+from tabulate import tabulate
+
+
+def bibtex_to_markdown(bibfile, output_file=None):
+    library = bibtexparser.parse_file(bibfile)
+
+    data = []
+    for entry in library.entries:
+        data.append(
+            [
+                entry["ID"],
+                entry["title"],
+                entry["year"],
+                entry["author"],
+            ]
+        )
+
+    header = ["ID", "Title", "Year", "Author"]
+    markdown = tabulate(data, headers=header, tablefmt="pipe")
+    if output_file:
+        with open(output_file, "w") as f:
+            f.write(markdown)
+    return markdown
+
+if __name__ == "__main__":
+    print(bibtex_to_markdown("references.bib", "references.md"))
+```
+
+
+

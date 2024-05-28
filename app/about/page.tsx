@@ -87,21 +87,70 @@ export default function About() {
         {/* 专业证书 */}
         <div className="col-span-full items-start space-y-2 pt-3 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <h3 className="col-span-2 col-start-2 mb-6 text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-left md:leading-14">
-            专业证书
+            技能
           </h3>
           <ProjectCard
-            title={"AZ-204: Developing Solutions for Microsoft Azure"}
-            description="From requirements definition and design to development, deployment, and maintenance. Use cloud DBAs, cloud administrators, and clients to implement solutions."
-            links={[
-              {
-                title: "View Exam Details",
-                href: "https://learn.microsoft.com/en-us/certifications/exams/az-204/",
-              },
-            ]}
-            titleLink={
-              "https://learn.microsoft.com/en-us/certifications/exams/az-204/"
-            }
-            className=" md relative col-span-2 col-start-2 w-full grow xl:w-1/2 "
+            title={"Python"}
+            description="熟练使用Python进行开发"
+            links={[]}
+            titleLink={"www.python.org"}
+            className="md relative col-span-2 col-start-2 w-full grow"
+          />
+          <ProjectCard
+            title={"Linux"}
+            description="熟练使用Linux操作系统"
+            links={[]}
+            titleLink={""}
+            className="md relative col-span-2 col-start-2 w-full grow"
+          />
+          <ProjectCard
+            title={"后端开发"}
+            description="熟练使用Flask（基于大数据挖掘的超特高压换流阀状态智能监测和评估系统项目）、FastAPI（大型充油线圈设备运行工况异常预警技术研究及应用、基于机器学习的风电机组关键设备故障预警系统开发及应用项目）等后端框架"
+            links={[]}
+            titleLink={""}
+            className="md relative col-span-2 col-start-2 w-full grow"
+          />
+          <ProjectCard
+            title={"前端开发"}
+            description="熟练使用Vue（大型充油线圈设备运行工况异常预警技术研究及应用、基于机器学习的风电机组关键设备故障预警系统开发及应用项目）、React（个人网站）等前端框架"
+            links={[]}
+            titleLink={""}
+            className="md relative col-span-2 col-start-2 w-full grow"
+          />
+          <ProjectCard
+            title={"数据库"}
+            description="熟练使用PostgreSQL（大型充油线圈设备运行工况异常预警技术研究及应用、基于机器学习的风电机组关键设备故障预警系统开发及应用项目）、MySQL（基于大数据挖掘的超特高压换流阀状态智能监测和评估系统项目）、Redis（基于大数据挖掘的超特高压换流阀状态智能监测和评估系统项目、大型充油线圈设备运行工况异常预警技术研究及应用、基于机器学习的风电机组关键设备故障预警系统开发及应用项目）等数据库"
+            links={[]}
+            titleLink={""}
+            className="md relative col-span-2 col-start-2 w-full grow"
+          />
+          <ProjectCard
+            title={"Docker"}
+            description="熟练使用Docker部署应用"
+            links={[]}
+            titleLink={""}
+            className="md relative col-span-2 col-start-2 w-full grow"
+          />
+          <ProjectCard
+            title={"Superset"}
+            description="熟练使用Superset进行数据可视化"
+            links={[]}
+            titleLink={""}
+            className="md relative col-span-2 col-start-2 w-full grow"
+          />
+          <ProjectCard
+            title={"Kafka"}
+            description="熟练使用Kafka消息队列"
+            links={[]}
+            titleLink={""}
+            className="md relative col-span-2 col-start-2 w-full grow"
+          />
+          <ProjectCard
+            title={"HTTP & Websocket MQTT"}
+            description="熟练使用HTTP、Websocket、MQTT等协议"
+            links={[]}
+            titleLink={""}
+            className="md relative col-span-2 col-start-2 w-full grow"
           />
         </div>
       </div>
