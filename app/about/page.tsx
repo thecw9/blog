@@ -91,7 +91,7 @@ export default function About() {
           </h3>
           <ProjectCard
             title={"Python"}
-            description="熟练使用Python进行开发"
+            description="熟练使用Python进行开发，熟练使用Pytorch、Tensorflow等深度学习框架，熟练使用Pandas、Numpy等数据处理库，熟练使用Flask、FastAPI等后端框架"
             links={[]}
             titleLink={"www.python.org"}
             className="md relative col-span-2 col-start-2 w-full grow"
