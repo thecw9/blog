@@ -97,6 +97,13 @@ export default function About() {
             className="md relative col-span-2 col-start-2 w-full grow"
           />
           <ProjectCard
+            title={"Shell"}
+            description=""
+            links={[]}
+            titleLink={"www.python.org"}
+            className="md relative col-span-2 col-start-2 w-full grow"
+          />
+          <ProjectCard
             title={"Linux"}
             description="熟练使用Linux操作系统"
             links={[]}
@@ -127,6 +134,13 @@ export default function About() {
           <ProjectCard
             title={"Docker"}
             description="熟练使用Docker部署应用"
+            links={[]}
+            titleLink={""}
+            className="md relative col-span-2 col-start-2 w-full grow"
+          />
+          <ProjectCard
+            title={"Git"}
+            description="熟练使用Git进行版本控制"
             links={[]}
             titleLink={""}
             className="md relative col-span-2 col-start-2 w-full grow"
